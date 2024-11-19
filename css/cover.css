@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'RobotoFlex';
+    src: url(../fonts/RobotoFlex.ttf);
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url(../fonts/Inconsolata.ttf);
+}
+
+.container {
+    position: absolute;
+    width: 1400px;
+    height: 2161px;
+    background-color: #e5e10e;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.charlie {
+    position: absolute;
+    left: 1033px;
+    z-index: 3;
+}
+
+.bestseller {
+    font-family: 'RobotoFlex';
+    position: absolute;
+    color: #00657e;
+    top: 100px;
+    left: 200px;
+    font-size: 52px;
+    font-variation-settings: "wght" 500;
+    opacity: 0;
+    animation: slideIn 1s ease-out 2s forwards;
+}
+
+.copies {
+    font-family: 'RobotoFlex';
+    position: absolute;
+    color: #755060;
+    top: 200px;
+    left: 180px;
+    font-size: 48px;
+    font-variation-settings: "wght" 480;
+    opacity: 0;
+    animation: slideIn 1s ease-out 2.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.circle {
+    font-family: 'RobotoFlex';
+    font-variation-settings: "wdth" 120;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform: translate(-50%, 0);
+    box-shadow: 0 0 0 5px white, 0 0 0 10px #00657e;
+    border-radius: 100%;
+    background-color:#00657e;
+    text-align: center;
+    top: 50%;
+    left: 1100px;
+    animation: pulse 0.5s forwards 1.5s;
+    opacity: 0;
+    z-index: 3;
+}
+
+.anniversary {
+    position: relative;
+    top: 100px;
+    color: #fefefd;
+    font-size: 48px;
+    font-variation-settings: "wght" 500, "XTRA" 400, "wdth" 120, "YTUC" 600;
+    letter-spacing: 4px;
+}
+
+.letter {
+    position: relative;
+    top: 124px;
+    left: 50px;
+    color: #b7e6f5;
+    font-size: 28px;
+    width: 300px;
+    font-variation-settings: "wght" 500;
+}
+
+.title {
+    font-family: 'Inconsolata';
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: right;
+    font-variation-settings: "wdth" 110;
+    filter: blur(2px);
+    animation: pulse 0.5s forwards 0.5s;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 2;
+    background-color: #e5e10e;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("http://i.imgur.com/5O74VI6.jpg");
+    mix-blend-mode: lighten;
+    pointer-events: none;
+  }
+
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: .5;
+        transform: translate(-50%, 0) rotate(-5deg) scale(5);
+        transition: all .3 cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1);
+    }
+}
+
+.the {
+    position: relative;
+    right: 550px;
+    top: 40px;
+}
+
+.small {
+    font-size: 70px;
+    font-variation-settings: "wght" 300;
+}
+
+.big {
+    font-size: 150px;
+    letter-spacing: 5px;
+    font-variation-settings: "wght" 400;
+}
+
+
+.bookclub {
+    position: absolute;
+    top: 1500px;
+    left: 100px;
+}
+
+.review {
+    font-family: 'RobotoFlex';
+    position: absolute;
+    top: 1800px;
+    left: 70px;
+    width: 1260px;
+    color: #755060;
+    font-size: 32px;
+    font-variation-settings: "wght" 500;
+}
+
+.blue {
+    color: #00657e;
+}
+
+.author {
+    font-family: 'RobotoFlex';
+    position: absolute;
+    top: 1984px;
+    left: -10px;
+    color: #fcfdff;
+    font-size: 216px;
+    width: 1500px;
+    text-wrap: nowrap;
+    font-variation-settings: "wght" 450, "YTAS" 700;
+    letter-spacing: 5px;
+}
+
+.up {
+    position: relative;
+    top: -25px;
+    animation: rise 0.5s ease-in-out 0.5s alternate 10;
+}
+
+@keyframes rise {
+    0% { top: -25px; }
+    100% { top: 0px; }
+}
+
+.italic {
+    font-variation-settings: "slnt" -8, "wght" 500;
+}
