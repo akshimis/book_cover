@@ -73,7 +73,7 @@
     text-align: center;
     top: 50%;
     left: 1100px;
-    animation: pulse 0.5s forwards 1.5s;
+    animation: stamp 0.5s forwards 1.5s;
     opacity: 0;
     z-index: 3;
 }
@@ -108,7 +108,7 @@
     text-align: right;
     font-variation-settings: "wdth" 110;
     filter: blur(2px);
-    animation: pulse 0.5s forwards 0.5s;
+    animation: stamp 0.5s forwards 0.5s;
     opacity: 0;
     overflow: hidden;
     z-index: 2;
@@ -127,7 +127,7 @@
     pointer-events: none;
   }
 
-@keyframes pulse {
+@keyframes stamp {
     0% {
         opacity: 0;
     }
